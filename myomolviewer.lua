@@ -5,10 +5,16 @@ scriptDetailsUrl = "" -- We don't have this until it's submitted to the Myo Mark
 function onPoseEdge(pose, edge)
     myo.debug("onPoseEdge: " .. pose .. ", " .. edge)
 
-    if (pose == "fist" and edge == "on") then
-        myo.mouse("left", "down")
-    else
-        myo.mouse("left", "up")
+    if (myo.isUnlocked()) then
+        if (pose == "fist" and edge == "on") then
+            myo.controlMouse(true)
+            myo.mouse("left", "down")
+        end
+
+        if (pose == "fingersSpread" and edge == "on") then
+            myo.controlMouse(true)
+            myo.mouse("center", "down")
+        end
     end
 end
 
@@ -20,14 +26,9 @@ end
 
 function onForegroundWindowChange(app, title)
     myo.debug("onForegroundWindowChange: " .. app .. ", " .. title)
-    if (not myo.mouseControlEnabled()) then
-        myo.controlMouse(true)
-    end
     if (app == "net.java.openjdk.cmd") then  --ID for Jmol
         return true
     else
-        myo.controlMouse(false)
-        myo.mouse("left", "up")
         return false
     end
 end
