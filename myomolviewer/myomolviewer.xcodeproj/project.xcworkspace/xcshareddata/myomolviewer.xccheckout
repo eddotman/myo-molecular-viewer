@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1F079234-B5CA-4CC5-AA38-6D1AEDED818E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>myomolviewer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AE44E44F8758731283B9C9F393E437C0E5FEA472</key>
+		<string>github.com:eddotman/myo-molecular-viewer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>myomolviewer/myomolviewer.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AE44E44F8758731283B9C9F393E437C0E5FEA472</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:eddotman/myo-molecular-viewer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AE44E44F8758731283B9C9F393E437C0E5FEA472</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AE44E44F8758731283B9C9F393E437C0E5FEA472</string>
+			<key>IDESourceControlWCCName</key>
+			<string>myo-molecular-viewer</string>
+		</dict>
+	</array>
+</dict>
+</plist>

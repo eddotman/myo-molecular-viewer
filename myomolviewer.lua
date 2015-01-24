@@ -1,5 +1,5 @@
-scriptId = 'com.thalmic.examples.outputeverything'
-scriptTitle = "Output Everything"
+scriptId = 'myomolviewer'
+scriptTitle = "MyoMolViewer"
 scriptDetailsUrl = "" -- We don't have this until it's submitted to the Myo Market
 
 function onPoseEdge(pose, edge)
@@ -11,7 +11,9 @@ end
 
 function onForegroundWindowChange(app, title)
     myo.debug("onForegroundWindowChange: " .. app .. ", " .. title)
-    return true
+    myo.controlMouse(true)
+    myo.mouse("left", "down")
+    return (app == "net.java.openjdk.cmd")
 end
 
 function activeAppName()
