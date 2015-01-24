@@ -11,9 +11,9 @@ end
 
 function onForegroundWindowChange(app, title)
     myo.debug("onForegroundWindowChange: " .. app .. ", " .. title)
-    myo.controlMouse(true)
     myo.mouse("left", "down")
-    return (app == "net.java.openjdk.cmd")
+    myo.controlMouse(true)
+    return (app == "net.java.openjdk.cmd")  --ID for Jmol
 end
 
 function activeAppName()
