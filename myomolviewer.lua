@@ -53,7 +53,7 @@ end
 
 function onForegroundWindowChange(app, title)
     myo.debug("onForegroundWindowChange: " .. app .. ", " .. title)
-    if (app == "com.valvesoftware.steam") then  --ID for Jmol
+    if (app == "net.java.openjdk.cmd") then  --ID for Jmol
         myo.setLockingPolicy("none")
         return true
     else
